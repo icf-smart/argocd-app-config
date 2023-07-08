@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: selenium
+spec:
+  selector:
+    matchLabels:
+      app: selenium
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: selenium
+    spec:
+      containers:
+      - name: selenium
+        image: ruudgong/selenium:latest
+        ports:
+        - containerPort: 8080
