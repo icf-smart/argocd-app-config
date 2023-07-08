@@ -6,7 +6,7 @@ spec:
   selector:
     app: selenium
   ports:
-  - port: 8080
+  - port: 4444
     protocol: TCP
-    targetPort: 8080
+    targetPort: 4444
   
